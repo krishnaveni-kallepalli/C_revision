@@ -1,0 +1,7 @@
+file 2d
+tui enable 
+l
+tui disable
+set history filename 123.txt
+set history save on 
+q

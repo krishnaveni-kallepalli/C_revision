@@ -1,0 +1,12 @@
+file 2d
+set history filename 1.txt
+set history save on
+l
+l
+l
+help size
+help set size
+help set
+set listsize 20
+l
+q

@@ -1,0 +1,10 @@
+file 2d
+set listsize 15
+list
+l
+l
+set history filename abc.txt
+set history save on 
+l
+run
+q

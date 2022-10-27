@@ -1,0 +1,13 @@
+file 2d
+set history filename gdb.txt 
+set history save on 
+l
+set listsize 3
+l
+l
+l
+l
+l
+l
+run
+q

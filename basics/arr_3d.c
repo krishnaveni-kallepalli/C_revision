@@ -5,6 +5,7 @@ int i,j,k,n,m,l,a[10][10][10];
 	scanf("%d",&m);
 	printf("Enter l:\n");
 	scanf("%d",&l);
+	
 	printf("Enter elements into array:\n");
 	for(i=0;i<n;i++)
 	{
@@ -16,6 +17,7 @@ int i,j,k,n,m,l,a[10][10][10];
 			}
 		}
 	}
+	
 	printf("Entered elements are:\n");
 	for(i=0;i<n;i++)
 	{

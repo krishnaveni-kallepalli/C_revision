@@ -1,0 +1,12 @@
+file 2d
+set history filename 8.txt
+set history save on 
+l
+set listsize 4
+l
+l
+l
+l
+l
+run
+q

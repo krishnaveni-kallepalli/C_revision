@@ -1,0 +1,36 @@
+start
+info b
+set history filename file.txt
+set history save on
+info b
+list
+n
+n
+n
+n
+n
+n
+2
+n
+n
+n
+n
+n
+n
+n
+n
+n
+tui enable
+b 16
+info b
+info watchpoint
+wacthpoint 15
+disable 16
+disable breakpoint 16
+info b
+disable b
+info b
+run
+n
+n
+q
