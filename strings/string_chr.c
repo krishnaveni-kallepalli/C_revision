@@ -22,6 +22,5 @@ int main()
 	scanf(" %c",&ch);
 	void (*fp)(char s[10],char ch)=str_char;
 	fp(s,ch);
-	
 	return 0;
 }
