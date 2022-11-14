@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define NUM_SIZE sizeof(int)*8
+#define NUM_SIZE sizeof(int)*4
 int main()
 {
 	int x,count=0,i,msb;
