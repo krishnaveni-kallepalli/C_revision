@@ -6,5 +6,5 @@ int main()
 	scanf("%d",&x);
 	printf("Enter position:\n");
 	scanf("%d",&p);
-	printf("Result:%d\n",x<<p);
+	(x&(1<<p))?printf("1\n"):printf("0\n");
 }
