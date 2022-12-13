@@ -1,5 +1,12 @@
 #include<stdio.h>
-
+void without_temp(char s[])
+{
+	int i,j,len;
+	for(len=0;s[len]!='\0';len++);
+	for(i=0,j=len-1;i<j;i++,j--)
+		s[i]=s[i]+s[j]-(s[j]=s[i]);
+	printf("%s\n",s);
+}
 void rev(char s[])
 {
 	int i,j,ch;
@@ -141,7 +148,7 @@ int main()
 	//rev_last_two_elements(s);
 	//fun(s,n);
 	//rev_mid(s);
-	funn(s);
+	//funn(s);
 	/*
 	void (*fp[])(char [])={rev,reversal};
 	int choice;
@@ -151,5 +158,6 @@ int main()
 	if (choice > 1) return 0;
 	(*fp[choice])(s);
 	*/
+	without_temp(s);
 	return 0;
 }
