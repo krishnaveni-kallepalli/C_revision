@@ -1,28 +1,31 @@
 #include<stdio.h>
-void add(int a,int b)
+void sum(int x,int y)
 {
-	printf("add:%d\n",a+b);
+	printf("Sum:%d\n",x+y);
 }
-void sub(int a,int b)
+void sub(int x,int y)
 {
-	printf("sub:%d\n",a-b);
+	printf("Sub:%d\n",x-y);
 }
-void mul(int a,int b)
+void mul(int x,int y)
 {
-	printf("mul:%d\n",a*b);
+	printf("mul:%d\n",x*y);
 }
-void div(int a,int b)
+void div(int x,int y)
 {
-	printf("div:%d\n",a/b);
+	printf("Div:%d\n",x/y);
+}
+void func(void (*fp[4])(int,int))
+{
+	int x,y;
+	scanf("%d %d",&x,&y);
+	(*fp[0])(x,y);
+	(*fp[1])(x,y);
+	(*fp[2])(x,y);
+	(*fp[3])(x,y);
 }
 int main()
 {
-	int a,b;
-	scanf("%d %d",&a,&b);
-	void (*fp[4])(int,int)={add,sub,mul,div};
-	fp[0](a,b);
-	fp[1](a,b);
-	fp[2](a,b);
-	fp[3](a,b);
-	
+	void (*fp[4])(int,int) = {sum,sub,mul,div};
+	func(fp);
 }
